@@ -5,9 +5,9 @@
 
 import datetime             # This imports the 'datetime' module
 
-weekNumber = datetime.datetime.today().weekday()  # Gets the weekday number (1-7)
+weekNumber = datetime.datetime.today().weekday()    # Gets the weekday number (1-7)
 
-if weekNumber < 5:
+if weekNumber < 5:                                  # i.e. 1-5 = Mon-Fri
     print("Yes, unfortunately today is a weekday.")
 else: 
     print("It is the weekend")
