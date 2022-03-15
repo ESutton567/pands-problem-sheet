@@ -28,10 +28,7 @@ Within this ReadMe I will cover programs that:
 ## Week 2
 ### This program calculates BMI
 
-References
-1. Code obtained from addOne.py during lecture week 2
-   
-'''python
+```python
 # asks the user to input their weight
 weight = int(input("Please enter your weight (kg):"))
 # asks the user to input their height
@@ -40,4 +37,6 @@ height = int(input("Please enter your height (cm):"))
 newNumber = weight/((height/100)**2)
 # outputs the variable based on the user input
 print('The BMI is kg/m2: {}' .format (newNumber))
-'''
+```
+References
+> 1. Code obtained from addOne.py during lecture week 2
