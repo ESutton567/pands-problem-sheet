@@ -11,6 +11,7 @@
 # Ref 8: https://matplotlib.org/stable/gallery/color/named_colors.html
 # Ref 9: https://stackoverflow.com/questions/18962063/matplotlib-setting-title-bold-while-using-times-new-roman
 # Ref 10 :https://www.tutorialspoint.com/how-to-write-text-in-subscript-in-the-axis-labels-and-the-legend-using-matplotlib
+# Ref 11: https://python-graph-gallery.com/web-line-chart-with-labels-at-line-end
 
 from tkinter.font import BOLD
 from matplotlib.font_manager import FontProperties
@@ -52,6 +53,7 @@ plt.title(
     fontweight=BOLD
     )
 
+# Ref 11 - customise text
 plt.text(
     2.5, 
     -11, 
