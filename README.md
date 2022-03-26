@@ -11,9 +11,6 @@ Suggested tools to run these programs:
 * [Visual Studio Code (VSC)](https://code.visualstudio.com/) 
 * [Python 3.8 or higher](https://www.python.org/)
 ---
-
-
-
 Within this ReadMe I will cover programs that:
 - Calculate BMI *(week 2)*
 - Ask a user to input a string and outputs every second letter in reverse order *(week 3)*
@@ -34,27 +31,57 @@ Within this ReadMe I will cover programs that:
 | 7  | Files        |[es.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/es.py)|
 | 8  | Plotting |[plottask.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/plottask.py)     |
 
+---
+
 ## 2. Statements
 
-This week's topic explored creating simple programs using **Statements**.
+    This week's topic explored creating simple programs using statements.
 
-The weekly task was to write a program to calculate a user's Body Mass Index (BMI)
+    The weekly task was to write a program to calculate a user's Body Mass Index (BMI)
 
-#### BMI.py
+#### **BMI.py**
 
 * This program begins by asking the user to input their weight in kilograms (kg), following by their height in centimetres (cm). 
 * It then creates a new variable that calculates BMI (weight[kg]/height[m<sup>2</sup>]), based on the user input values. 
 * Finally it prints out the resulting BMI value<sup>1.
 
-```python
-# asks the user to input their weight
+~~~python
+# ask the user to input their weight
 weight = int(input("Please enter your weight (kg):"))
-# asks the user to input their height
+# ask the user to input their height
 height = int(input("Please enter your height (cm):"))
-# creates a variable that calculates BMI as per the formula
+# create a variable that calculates BMI as per the formula
 newNumber = weight/((height/100)**2)
-# outputs the variable based on the user input
+# output the variable based on the user input
 print('The BMI is kg/m2: {}' .format (newNumber))
-```
+~~~
 References
 > 1. [Code obtained from addOne.py during Statements topic lectures](https://github.com/ESutton567/Pands2022/blob/main/Lectures/Week02/addOne.py)
+
+---
+
+## 3. Variables
+
+    This week explored the topic of variables.
+
+    The weekly task was to write a program that takes string inputted by the user and outputs every second letter in reverse order 
+
+#### **secondtring.py**
+
+* This program begins by asking the user to input a sentance (argument). 
+* It then slices the inputted argument to every other character of the input argument from index 0 (0 being the first character) to the end ([::2]<sup>1) 
+* To retrieve these characters in reverse order add a minus in to [::2] -> [::-2]<sup>2 
+* Finally it prints out the resulting message.
+
+~~~python
+# ask the user to enter a sentance
+# slice the argument to every 2nd element, and reverse it
+message = input("Please enter a sentance: ")[::-2] 
+# print the message
+print(message)
+~~~
+References
+> 1. [stackoverflow.com](https://stackoverflow.com/questions/20847205/program-to-extract-every-alternate-letters-from-a-string-in-python)
+> 2. [realpython.com](https://realpython.com/reverse-string-python/)
+
+---
