@@ -26,13 +26,15 @@ Within this ReadMe I will cover programs that:
 | 7  | Files        |[es.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/es.py)|
 | 8  | Plotting |[plottask.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/plottask.py)     |
 
-## Weekly Task 02
-### Statements
-#### This program calculates BMI
+## 2. Statements
 
 This week's topic explored creating simple programs using **Statements**.
 
-* The program begins by asking the user to input their weight in kilograms (kg), following by their height in centimetres (cm). 
+The weekly task was to write a program to calculate a user's Body Mass Index (BMI)
+
+### BMI.py
+
+* This program begins by asking the user to input their weight in kilograms (kg), following by their height in centimetres (cm). 
 * It then creates a new variable that calculates BMI (weight[kg]/height[m<sup>2</sup>]), based on the user input values. 
 * Finally it prints out the resulting BMI value<sup>1.
 
