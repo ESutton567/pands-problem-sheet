@@ -47,4 +47,4 @@ newNumber = weight/((height/100)**2)
 print('The BMI is kg/m2: {}' .format (newNumber))
 ```
 References
-> 1. Code obtained from addOne.py during lecture week 2
+> 1. [Code obtained from addOne.py during Statements topic lectures](https://github.com/ESutton567/Pands2022/blob/main/Lectures/Week02/addOne.py)
