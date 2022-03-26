@@ -6,6 +6,14 @@ My name is **Éilis Sutton** and I would like to welcome you to my first foray i
 
 Below you will find a list of weekly tasks that I have completed ***in python*** as part of my course in the Galway-Mayo Institute of Technology (GMIT) **Higher Diploma in Computing in Data Analytics**
 
+---
+Suggested tools to run these programs:
+* [Visual Studio Code (VSC)](https://code.visualstudio.com/) 
+* [Python 3.8 or higher](https://www.python.org/)
+---
+
+
+
 Within this ReadMe I will cover programs that:
 - Calculate BMI *(week 2)*
 - Ask a user to input a string and outputs every second letter in reverse order *(week 3)*
@@ -32,7 +40,7 @@ This week's topic explored creating simple programs using **Statements**.
 
 The weekly task was to write a program to calculate a user's Body Mass Index (BMI)
 
-### BMI.py
+#### BMI.py
 
 * This program begins by asking the user to input their weight in kilograms (kg), following by their height in centimetres (cm). 
 * It then creates a new variable that calculates BMI (weight[kg]/height[m<sup>2</sup>]), based on the user input values. 
