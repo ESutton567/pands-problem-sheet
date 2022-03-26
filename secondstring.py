@@ -1,14 +1,14 @@
 # This program asks the user to input a string and outputs every second letter in reverse order
 # Author: Éilis Sutton
 
-# To retrieve every other character of the input sentance from index 0 (0 being the first character)
-# to the end add [::2] following the input message instruction
-# Ref: https://stackoverflow.com/questions/20847205/program-to-extract-every-alternate-letters-from-a-string-in-python
-
-# To retrieve these characters in reverse order add a minus in to [::2] -> [::-2] 
-# Ref: https://realpython.com/reverse-string-python/
+# Ref 1: https://stackoverflow.com/questions/20847205/program-to-extract-every-alternate-letters-from-a-string-in-python
+# Ref 2: https://realpython.com/reverse-string-python/
 
 
+# ask the user to enter a sentance
+# slice the argument to every 2nd element ([::2]; Ref 1)
+# reverse the argument by adding a minus to the slide instruction (Ref 2) 
 message = input("Please enter a sentance: ")[::-2] 
+# print the message
 print(message)
 
