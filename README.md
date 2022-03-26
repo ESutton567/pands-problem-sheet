@@ -100,7 +100,7 @@ The [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture):
 * This program begins by creating a function to run the Collatz Conjecture<sup>1</sup>. A conditional statement is applied that if the argument (number) is even then it is to be divided by 2. If the number is not even, i.e. it is odd, then the number will be multipled by 3 and a 1 subsequently added. 
 * The program will print the output
 * The user is asked to enter an integer
-* The program will enter this value into the Collatz function repeatedly until the function outputs a value of 1. 
+* The program will enter this value into the Collatz function, and return the output value back into the function repeatedly until the function outputs a value of 1. 
 * When this last step occurs the program will be terminated<sup>2</sup>
 
 ~~~python
