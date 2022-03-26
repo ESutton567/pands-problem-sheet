@@ -15,7 +15,7 @@ Within this ReadMe I will cover programs that:
 - Read in a text file and outputs the number of e's it contains *(week 7*)
 - Display a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes *(week 8*)
 
-| Week Number| Topic | Program                                                      |
+| Week Number| Topic | Program Link                                                      |
 |:-----------:|:-------------|:------------------------------------------------------------------|
 | 2  | Statements   |[bmi.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/bmi.py)|
 | 3  | Variables    |[secondstring.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/secondstring.py)|
@@ -23,7 +23,7 @@ Within this ReadMe I will cover programs that:
 | 5  | Data         |[weekday.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/weekday.py)|
 | 6  | Functions    |[squareroot.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/squareroot.py)|
 | 7  | Files        |[es.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/es.py)|
-| 8  | Looking ahead|     |
+| 8  | Looking ahead|[plottask.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/plottask.py)]     |
 
 ## Week 2
 ### This program calculates BMI
