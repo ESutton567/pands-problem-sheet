@@ -32,9 +32,9 @@ Within this ReadMe I will cover programs that:
 
 This week's topic explored creating simple programs using **Statements**.
 
-*The program begins by asking the user to input their weight in kilograms (kg), following by their height in centimetres (cm). 
-*It then creates a new variable that calculates BMI (weight[kg]/height[m<sup>2</sup>]), based on the user input values. 
-*Finally it prints out the resulting BMI value<sup>1<\sup>.
+* The program begins by asking the user to input their weight in kilograms (kg), following by their height in centimetres (cm). 
+* It then creates a new variable that calculates BMI (weight[kg]/height[m<sup>2</sup>]), based on the user input values. 
+* Finally it prints out the resulting BMI value<sup>1.
 
 ```python
 # asks the user to input their weight
