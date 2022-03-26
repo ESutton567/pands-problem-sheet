@@ -10,7 +10,6 @@
 # Ref 7: https://www.geeksforgeeks.org/matplotlib-pyplot-title-in-python/
 # Ref 8: https://matplotlib.org/stable/gallery/color/named_colors.html
 
-from re import X
 import numpy as np                  # import package to work with array data
 import matplotlib.pyplot as plt     # pyplot is a state-based interface to matplotlib
 
