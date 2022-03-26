@@ -28,6 +28,10 @@ Within this ReadMe I will cover programs that:
 ## Week 2
 ### This program calculates BMI
 
+This week's topic explored creating simple programs using **Statements**.
+
+The program begins by asking the user to input their weight in kilograms (kg), following by their height in centimetres (cm). It then creates a new variable that calculates BMI (weight[kg]/height[$m^2$]), based on the user input values. Finally it prints out the resulting BMI value.
+
 ```python
 # asks the user to input their weight
 weight = int(input("Please enter your weight (kg):"))
