@@ -23,7 +23,7 @@ Within this ReadMe I will cover programs that:
 | 5  | Data         |[weekday.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/weekday.py)|
 | 6  | Functions    |[squareroot.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/squareroot.py)|
 | 7  | Files        |[es.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/es.py)|
-| 8  | Looking ahead|[plottask.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/plottask.py)]     |
+| 8  | Looking ahead|[plottask.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/plottask.py)     |
 
 ## Week 2
 ### This program calculates BMI
