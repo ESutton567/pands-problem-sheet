@@ -86,7 +86,7 @@ References
 
 ---
 
-## 3. Controlling the flow
+## 4. Controlling the flow
 
 This week explored flow control: assigning conditions to statements and implementing iterations using 'for' loops and 'while' loops.
 
