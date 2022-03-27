@@ -154,7 +154,7 @@ The weekly task was to create a program that outputs whether the current day is 
 
 ~~~python
 
-# import the 'datetime' module
+# import the 'datetime' module (Ref 1 and 2)
 import datetime              
 # instruct to get the weekday number (1-7)
 weekNumber = datetime.datetime.today().weekday()    
