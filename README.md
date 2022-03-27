@@ -136,3 +136,39 @@ References
 > 2. [java2blog.com](https://java2blog.com/exit-program-python/)
 
 ---
+
+## 4. Data
+
+This week explored data structures including:
+- lists
+- tuples
+- dictionaries
+
+The weekly task was to create a program that outputs whether the current day is a weekday or not.
+
+#### **weekday.py**
+
+* This program uses an in-built module of Python called datatime, which supplies classes for manipulating dates and times<sup>1</sup>. 
+* It then sets a variable to be equal to the weekday number where 0-6 equate to the 7 days of the week (Mon-Sun, with Monday beginning at 0)
+* It subsequently gives two printing options when run, depending on the day of the week that the program is run. That it is a weekday if run on Monday to Fri (weekday numbers 0-4) or a weekend if run on Saturday or Sunday (weekday numbers 5 and 6)<sup>2</sup>.
+
+~~~python
+
+# import the 'datetime' module
+import datetime              
+# instruct to get the weekday number (1-7)
+weekNumber = datetime.datetime.today().weekday()    
+
+# set the condition to print that it is a weekday 
+# if the weeknumber is between 0-4 (i.e Mon-Fri)
+if weekNumber < 5:                                  
+    print("Yes, unfortunately today is a weekday.")
+# if it is not between 0-4, print that it is a weekend
+else: 
+    print("It is the weekend")
+~~~
+References
+> 1. [w3schools.com](https://www.w3schools.com/python/python_datetime.asp)
+> 2. [tutorialsrack.com](https://www.tutorialsrack.com/articles/324/how-to-find-the-current-day-is-weekday-or-weekends-in-python)
+
+---
