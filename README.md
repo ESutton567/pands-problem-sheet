@@ -137,7 +137,7 @@ References
 
 ---
 
-## 4. Data
+## 5. Data
 
 This week explored data structures including:
 - lists
@@ -170,5 +170,53 @@ else:
 References
 > 1. [w3schools.com](https://www.w3schools.com/python/python_datetime.asp)
 > 2. [tutorialsrack.com](https://www.tutorialsrack.com/articles/324/how-to-find-the-current-day-is-weekday-or-weekends-in-python)
+
+---
+
+## 5. Functions
+
+This week explored functions.
+
+The weekly task was to create a program that takes a floating point number as the input and outputs an approximation of it's square root, without using the in-built functions x**.5 or math.sqrt(x).
+
+#### **squareroot.py**
+
+* This program creates a function to calculate the square root of a number that the user inputs
+* The algorithm employed to find the root of the number is Newton's Method<sup>1,2</sup>.
+
+[Newton's Method](https://en.wikipedia.org/wiki/Newton%27s_method):
+> "...a root-finding algorithm which produces successively better approximations to the roots (or zeroes) of a real-valued function."
+
+* Firstly, the program asks the user to input a positive number.
+* It then enters the number into the function, runs it through an equation (x = x - (x multiplied by x minus y) divided by (2 multiplied by x), and it does this 6 times to improve on the accuray of the root output number. 
+* It then outputs a sentence that lets the user know what the root value is of the number they chose.
+
+~~~python
+
+# ask the user to input a positive float number
+num1 = float(input("Please enter a positive number: "))
+
+# Use Newton's method to write a square root algorithm (Ref 1-2)
+# create a function called sqrt 
+def sqrt(y: float) -> float:
+    x: float = y
+    # set a range to run Newton's method equation that follows below 6 times 
+    # (6 repeats seems to return a fairly accurate redult. No need to go higher - Ref 2)
+    for _ in range (0,6):  
+        # Asking: x^2 - y = 0 (y [slope] is a known constant)        
+        x = x - (x * x - y) / (2 * x)   
+    # call the function
+    return x            
+
+# create a new variable equal to the function with the user argument (user inputted float number) inserted into the function
+# make sure to include the whole function name here
+ans = sqrt(num1) 
+# print the new variable, which is the output of the function         
+print ("The square root of 14.5 is approx {} ".format (ans)) 
+
+~~~
+References
+> 1. [stackoverflow.com](https://stackoverflow.com/questions/1623375/writing-your-own-square-root-function)
+> 2. [youtube.com](https://www.youtube.com/watch?v=3i9KozCUKU4)
 
 ---
