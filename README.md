@@ -173,7 +173,7 @@ References
 
 ---
 
-## 5. Functions
+## 6. Functions
 
 This week explored functions.
 
@@ -218,5 +218,65 @@ print ("The square root of 14.5 is approx {} ".format (ans))
 References
 > 1. [stackoverflow.com](https://stackoverflow.com/questions/1623375/writing-your-own-square-root-function)
 > 2. [youtube.com](https://www.youtube.com/watch?v=3i9KozCUKU4)
+
+---
+
+## 7. Files
+
+This week's topic covered reading and writing to files, including an introduction to JavaScript Object Notation (JSON).
+
+The weekly task was to create a program that reads in a text file and outputs the number of e's it contains.
+
+#### **es.py**
+
+* This program creates a function to calculate the square root of a number that the user inputs
+* The ``` sys.argv[x] ``` command takes an argument from the command line and inserts it into the python code<sup>3</sup>
+    * For the purpose of this program, it allows the user to enter a filename in the command line interface (VSC terminal), after instructing the program to run. In this case, x = 1 will insert the argument that follows the ``` python es.py ``` instruction to run the program.
+If the user were to enter x  = 0, this would insert the name of the running program<sup>3</sup>
+
+
+
+
+* This will get the last argument on the command line. If no arguments are passed, it will be the script name itself, as sys.argv[0] is the name of the running program.
+* The algorithm employed to find the root of the number is Newton's Method<sup>1,2</sup>.
+
+* Where sys.argv[0] is the name of the running program (as no arguments are passed), sys.argv[1] gets the last argement on the command line <sup>3</sup>
+
+
+~~~python
+
+# This program reads in a text file and outputs the number of e's in it
+# Author: Éilis Sutton
+# Ref 1: Count occurences in a text file  
+# https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/
+# Ref 2: Using the count function 
+# https://www.w3schools.com/python/ref_list_count.asp
+# Ref 3: Get the file from an argement on the CLI 
+# https://stackoverflow.com/questions/7033987/get-a-file-from-cli-input
+# Ref 4: Moby Dick text file downloaded from 
+# https://gist.githubusercontent.com/StevenClontz/4445774/raw/1722a289b665d940495645a5eaaad4da8e3ad4c7/mobydick.txt
+# Ref 5: Create a function to return the letter count 
+# https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
+
+# import the sys module to allow command line arguments to be passed into the Python script
+import sys              
+# assign the filename using the CLI byget the last argument on the command line (i.e. read in the filename from the terminal, if running in VS code'; Ref 3)
+filename = sys.argv[-1]
+
+def countEs(filename, letter):        # Ref 5 
+    with open(filename, 'rt') as f:  # Open the file in read mode(text file)
+        es = f.read()               # Store the content of the file as a variable
+        return es.count(letter)     # Ref 1 & 2; the countEs fun now returns the count function
+
+amountEs = countEs(filename,str("e"))  # This uses the count fun and specifies that within the filename you want 'e' counted 
+print("There are {} Es in {}".format(amountEs, filename))
+~~~
+References
+> 1. [stackoverflow.com](https://stackoverflow.com/questions/1623375/writing-your-own-square-root-function)
+> 2. [youtube.com](https://www.youtube.com/watch?v=3i9KozCUKU4)
+
+
+
+3. [stackoverflow.com] https://stackoverflow.com/questions/4117530/sys-argv1-meaning-in-script
 
 ---

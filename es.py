@@ -13,7 +13,7 @@
 
 
 import sys              # Ref 3
-filename = sys.argv[-1]
+filename = sys.argv[1]
 
 def countEs(filename, letter):        # Ref 5 
     with open(filename, 'rt') as f:  # Open the file in read mode(text file)
