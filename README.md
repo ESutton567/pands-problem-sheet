@@ -10,9 +10,10 @@ Below you will find a list of weekly tasks that I have completed in **Python** a
 Suggested tools to run these programs:
 * [Visual Studio Code (VSC)](https://code.visualstudio.com/) 
 * [Python 3.8 or higher](https://www.python.org/)
+* [GitHub website](https://github.com/)
 ---
 
-The below table lists the topics that were covered each week, the programs assigned as part of the weekly tasks and links to the code on [Github](https://github.com/).
+The below table lists the topics that were covered each week, the programs assigned as part of the weekly tasks and links to the code on [GitHub](https://github.com/).
 
 | Weekly Task Number | Topic | URL|
 |:-----------:|:-------------|:-------------|
@@ -24,6 +25,12 @@ The below table lists the topics that were covered each week, the programs assig
 | 6  | Functions    |[squareroot.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/squareroot.py)|
 | 7  | Files        |[es.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/es.py)|
 | 8  | Plotting |[plottask.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/plottask.py)     |
+
+---
+## 1. Creating a repository
+
+This week's topic was to create a repository on GitHub.
+Instructions for this can be found [here](https://docs.github.com/en/get-started/quickstart/create-a-repo).
 
 ---
 
