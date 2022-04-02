@@ -1,15 +1,15 @@
 # pands-problem-sheet
 
 ## Table of Contents
-    [Project Descripton](https://github.com/ESutton567/pands-problem-sheet#pands-problem-sheet)
-    [1. Creating a repository](https://github.com/ESutton567/pands-problem-sheet#1-creating-a-repository)
-    [2. Statements](https://github.com/ESutton567/pands-problem-sheet#2-statements)
-    [3. Variables](https://github.com/ESutton567/pands-problem-sheet#3-variables)
-    [4. Controlling the flow](https://github.com/ESutton567/pands-problem-sheet#4-controlling-the-flow)
-    [5. Data](https://github.com/ESutton567/pands-problem-sheet#5-data)
-    [6. Functions](https://github.com/ESutton567/pands-problem-sheet#6-functions)
-    [7. Files](https://github.com/ESutton567/pands-problem-sheet#7-files)
-    [8. Plotting](https://github.com/ESutton567/pands-problem-sheet#7-plotting)
+* [Project Descripton](https://github.com/ESutton567/pands-problem-sheet#pands-problem-sheet)
+  * [1. Creating a repository](https://github.com/ESutton567/pands-problem-sheet#1-creating-a-repository)
+  * [2. Statements](https://github.com/ESutton567/pands-problem-sheet#2-statements)
+  * [3. Variables](https://github.com/ESutton567/pands-problem-sheet#3-variables)
+  * [4. Controlling the flow](https://github.com/ESutton567/pands-problem-sheet#4-controlling-the-flow)
+  * [5. Data](https://github.com/ESutton567/pands-problem-sheet#5-data)
+  * [6. Functions](https://github.com/ESutton567/pands-problem-sheet#6-functions)
+  * [7. Files](https://github.com/ESutton567/pands-problem-sheet#7-files)
+  * [8. Plotting](https://github.com/ESutton567/pands-problem-sheet#7-plotting)
 
 ## Project Descripton
 
@@ -38,14 +38,14 @@ The below table lists the topics that were covered each week, the programs assig
 | 8  | Plotting |[plottask.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/plottask.py)     |
 
 ---
-## 1. Creating a repository
+### 1. Creating a repository
 
 This week's topic was to create a repository on GitHub.
 Instructions for this can be found [here](https://docs.github.com/en/get-started/quickstart/create-a-repo).
 
 ---
 
-## 2. Statements
+### 2. Statements
 
 This week's topic explored creating simple programs using statements.
 
@@ -78,7 +78,7 @@ References
 
 ---
 
-## 3. Variables
+### 3. Variables
 
 This week explored the topic of variables.
 
@@ -110,7 +110,7 @@ References
 
 ---
 
-## 4. Controlling the flow
+### 4. Controlling the flow
 
 This week explored flow control: assigning conditions to statements and implementing iterations using 'for' loops and 'while' loops.
 
@@ -167,7 +167,7 @@ References
 
 ---
 
-## 5. Data
+### 5. Data
 
 This week explored data structures including:
 - lists
@@ -209,7 +209,7 @@ References
 
 ---
 
-## 6. Functions
+### 6. Functions
 
 This week explored functions.
 
@@ -263,7 +263,7 @@ References
 
 ---
 
-## 7. Files
+### 7. Files
 
 This week's topic covered reading and writing to files, including an introduction to JavaScript Object Notation (JSON).
 
@@ -313,7 +313,7 @@ References
 
 ---
 
-## 8. Plotting
+### 8. Plotting
 
 This week's topic covered plotting, with the [**matplotlib**](https://matplotlib.org/) module.
 
