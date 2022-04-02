@@ -51,7 +51,7 @@ This week's topic explored creating simple programs using statements.
 
 The weekly task was to write a program to calculate a user's Body Mass Index (BMI)
 
-#### **BMI.py**
+[bmi.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/bmi.py)|
 
 * This program begins by asking the user to input their weight in kilograms (kg), following by their height in centimetres (cm). 
 * It then creates a new variable that calculates BMI (weight[kg]/height[m<sup>2</sup>]), based on the user input values. 
@@ -84,7 +84,7 @@ This week explored the topic of variables.
 
 The weekly task was to write a program that takes a string inputted by the user and outputs every second letter in reverse order.
 
-#### **secondstring.py**
+[secondstring.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/secondstring.py)
 
 * This program begins by asking the user to input a sentance (argument). 
 * It then slices the inputted argument to every other character of the input argument from index 0 (0 being the first character) to the end ([::2]<sup>1). 
@@ -119,7 +119,7 @@ The weekly task was to run the Collatz Conjecture on a user input value.
 The [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture):
 >"...in mathematics asks whether repeating two simple arithmetic operations will eventually transform every positive integer into one. It concerns sequences of integers in which each term is obtained from the previous term as follows: if the previous term is even, the next term is one half of the previous term. If the previous term is odd, the next term is 3 times the previous term plus 1."
 
-#### **collatz.py**
+[collatz.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/collatz.py)
 
 * This program begins by creating a function to run the Collatz Conjecture<sup>1. A conditional statement is applied that if the argument (number) is even then it is to be divided by 2. If the number is not even, i.e. it is odd, then the number will be multipled by 3 and a 1 subsequently added. 
 * The user is asked to enter an integer which is run through the collatzz function
@@ -176,7 +176,7 @@ This week explored data structures including:
 
 The weekly task was to create a program that outputs whether the current day is a weekday or not.
 
-#### **weekday.py**
+[weekday.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/weekday.py)
 
 * This program uses an in-built module of Python called datetime, which supplies classes for manipulating dates and times<sup>1. 
 * It then sets a variable to be equal to the weekday number where 0-6 equate to the 7 days of the week (Monday-Sunday, with Monday beginning at 0).
@@ -215,7 +215,7 @@ This week explored functions.
 
 The weekly task was to create a program that takes a floating point number as the input and outputs an approximation of it's square root, without using the in-built functions x**.5 or math.sqrt(x).
 
-#### **squareroot.py**
+[squareroot.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/squareroot.py)
 
 * This program creates a function to calculate the square root of a number that the user inputs.
 * The algorithm employed to find the root of the number is Newton's Method<sup>1,2</sup>.
@@ -272,7 +272,7 @@ The weekly task was to write a program that reads in a text file from the comman
 The text file [moby-dick.txt](https://gist.githubusercontent.com/StevenClontz/4445774/raw/1722a289b665d940495645a5eaaad4da8e3ad4c7/mobydick.txt) was downloaded from the Github website for this purpose<sup>4</sup>.
 
 
-#### **es.py**
+[es.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/es.py)
 
 * Firstly, the ```sys``` module is imported and instructions follow to read in the filename from the terminal (if running in VS code)<sup>3</sup>.
     * The ```sys.argv[x]``` command takes an argument from the command line and inserts it into the python code<sup>3</sup>.
@@ -319,7 +319,7 @@ This week's topic covered plotting, with the [**matplotlib**](https://matplotlib
 
 The weekly task was to write a program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
 
-#### **plottask.py**
+[plottask.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/plottask.py)
 
 * Firstly, the [**NumPy**](https://numpy.org/) module is imported to allow the program to work with array data. 
 * Secondly, matplotlib is imported to allow plotting functions within the program.
