@@ -4,7 +4,7 @@
 
 My name is **Éilis Sutton** and I would like to welcome you to my first foray into programming. 
 
-Below you will find a list of weekly tasks that I have completed ***in python*** as part of my course in the Galway-Mayo Institute of Technology (GMIT) **Higher Diploma in Computing in Data Analytics**
+Below you will find a list of weekly tasks that I have completed ***in python*** as part of my course in the [Atlantic Technological University (ATU)](https://www.gmit.ie/) (previously the Galway-Mayo Institute of Technology [GMIT]) **Higher Diploma in Computing in Data Analytics**
 
 ---
 Suggested tools to run these programs:
