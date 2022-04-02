@@ -225,38 +225,28 @@ References
 
 This week's topic covered reading and writing to files, including an introduction to JavaScript Object Notation (JSON).
 
-The weekly task was to create a program that reads in a text file and outputs the number of e's it contains.
+The weekly task was to write a program that reads in a text file from the command line and outputs the number of e's it contains.
+
+The text file "moby-dick.txt" was downloaded from the Github website for this purpose<sup>4</sup>.
+
 
 #### **es.py**
 
-* This program creates a function to calculate the square root of a number that the user inputs
-* The ``` sys.argv[x] ``` command takes an argument from the command line and inserts it into the python code<sup>3</sup>
-    * For the purpose of this program, it allows the user to enter a filename in the command line interface (VSC terminal), after instructing the program to run. In this case, x = 1 will insert the argument that follows the ``` python es.py ``` instruction to run the program.
-If the user were to enter x  = 0, this would insert the name of the running program<sup>3</sup>
+* Firstly, the ```sys``` module is imported and instructions follow to read in the filename from the terminal (if running in VS code)<sup>3</sup>
+    * The ```sys.argv[x]``` command takes an argument from the command line and inserts it into the python code<sup>3</sup>
+    * For the purpose of this program, it allows the user to enter a filename in the command line interface (VSC terminal), after instructing the program to run. In this case, x = 1 will insert the argument that follows the ```python es.py``` instruction to run the program
+    * If the user were to enter x  = 0, this would insert the name of the running program<sup>3</sup>
+    * This will get the last argument on the command line. If no arguments are passed, it will be the script name itself, as sys.argv[0] is the name of the running program.
+    * Where sys.argv[0] is the name of the running program (as no arguments are passed), sys.argv[1] gets the last argument on the command line<sup>3</sup>.
 
+* A function is then used to count and return the number of e's that occur in the txt file<sup>5</sup>. Firstly the file is opened in read mode. The contents of the file are stored as a variable and then instructions are given to return the function as a count function<sup>1,2</sup>.
 
+* Lastly, the count function is instructed to count the e's in the txt file and prints it out. 
 
-
-* This will get the last argument on the command line. If no arguments are passed, it will be the script name itself, as sys.argv[0] is the name of the running program.
-* The algorithm employed to find the root of the number is Newton's Method<sup>1,2</sup>.
-
-* Where sys.argv[0] is the name of the running program (as no arguments are passed), sys.argv[1] gets the last argement on the command line <sup>3</sup>
-
+* To run this program enter the following into the command line (while ensuring the moby-dick.text file is within the working directory):
+```es.py moby-dick.txt```
 
 ~~~python
-
-# This program reads in a text file and outputs the number of e's in it
-# Author: Éilis Sutton
-# Ref 1: Count occurences in a text file  
-# https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/
-# Ref 2: Using the count function 
-# https://www.w3schools.com/python/ref_list_count.asp
-# Ref 3: Get the file from an argement on the CLI 
-# https://stackoverflow.com/questions/7033987/get-a-file-from-cli-input
-# Ref 4: Moby Dick text file downloaded from 
-# https://gist.githubusercontent.com/StevenClontz/4445774/raw/1722a289b665d940495645a5eaaad4da8e3ad4c7/mobydick.txt
-# Ref 5: Create a function to return the letter count 
-# https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
 
 # import the sys module to allow command line arguments to be passed into the Python script
 import sys              
@@ -266,17 +256,16 @@ filename = sys.argv[-1]
 def countEs(filename, letter):        # Ref 5 
     with open(filename, 'rt') as f:  # Open the file in read mode(text file)
         es = f.read()               # Store the content of the file as a variable
-        return es.count(letter)     # Ref 1 & 2; the countEs fun now returns the count function
+        return es.count(letter)     # The countEs fun now returns the count function (Ref 1-2)
 
-amountEs = countEs(filename,str("e"))  # This uses the count fun and specifies that within the filename you want 'e' counted 
+amountEs = countEs(filename,str("e"))  # This uses the count function and specifies that within the filename you want 'e' counted 
 print("There are {} Es in {}".format(amountEs, filename))
 ~~~
 References
-> 1. [stackoverflow.com](https://stackoverflow.com/questions/1623375/writing-your-own-square-root-function)
-> 2. [youtube.com](https://www.youtube.com/watch?v=3i9KozCUKU4)
-
-
-
-3. [stackoverflow.com] https://stackoverflow.com/questions/4117530/sys-argv1-meaning-in-script
+> 1. [pythonexamples.org](https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/)
+> 2. [www.w3schools.com](https://www.w3schools.com/python/ref_list_count.asp)
+> 3. [stackoverflow.com](https://stackoverflow.com/questions/7033987/get-a-file-from-cli-input)
+> 4. [gist.githubusercontent.com](https://gist.githubusercontent.com/StevenClontz/4445774/raw/1722a289b665d940495645a5eaaad4da8e3ad4c7/mobydick.txt)
+> 5. [www.geeksforgeeks.org](https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/)
 
 ---
