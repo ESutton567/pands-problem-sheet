@@ -4,21 +4,15 @@
 
 My name is **Éilis Sutton** and I would like to welcome you to my first foray into programming. 
 
-Below you will find a list of weekly tasks that I have completed ***in python*** as part of my course in the [Atlantic Technological University (ATU)](https://www.gmit.ie/) (previously the Galway-Mayo Institute of Technology [GMIT]) **Higher Diploma in Computing in Data Analytics**
+Below you will find a list of weekly tasks that I have completed in **Python** as part of my course in the [Atlantic Technological University (ATU)](https://www.gmit.ie/) (previously the Galway-Mayo Institute of Technology [GMIT]) **Higher Diploma in Computing in Data Analytics**
 
 ---
 Suggested tools to run these programs:
 * [Visual Studio Code (VSC)](https://code.visualstudio.com/) 
 * [Python 3.8 or higher](https://www.python.org/)
 ---
-Within this ReadMe I will cover programs that:
-- Calculate BMI *(week 2)*
-- Ask a user to input a string and outputs every second letter in reverse order *(week 3)*
-- Run the collatz conjecture *(week 4*)
-- Output whether or not today is a weekday *(week 5*)
-- Takes a positive floating-point number as input and outputs an approximation of its square root without using built in functions *(week 6*)
-- Read in a text file and outputs the number of e's it contains *(week 7*)
-- Display a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes *(week 8*)
+
+The below table lists the topics that were covered each week, the programs assigned as part of the weekly tasks and links to the code on [Github](https://github.com/).
 
 | Weekly Task Number | Topic | URL|
 |:-----------:|:-------------|:-------------|
@@ -46,7 +40,7 @@ The weekly task was to write a program to calculate a user's Body Mass Index (BM
 * Finally it prints out the resulting BMI value<sup>1.
 
 ~~~python
-# ask the user to input their weight
+# Ref 1 - ask the user to input their weight
 weight = int(input("Please enter your weight (kg):"))
 # ask the user to input their height
 height = int(input("Please enter your height (cm):"))
@@ -56,7 +50,7 @@ newNumber = weight/((height/100)**2)
 print('The BMI is kg/m2: {}' .format (newNumber))
 ~~~
 
-* To run this program enter the following into the command line
+* To run this program enter the following into the command line:
 ~~~ 
 python bmi.py 
 ~~~
@@ -70,13 +64,13 @@ References
 
 This week explored the topic of variables.
 
-The weekly task was to write a program that takes string inputted by the user and outputs every second letter in reverse order 
+The weekly task was to write a program that takes a string inputted by the user and outputs every second letter in reverse order.
 
 #### **secondstring.py**
 
 * This program begins by asking the user to input a sentance (argument). 
-* It then slices the inputted argument to every other character of the input argument from index 0 (0 being the first character) to the end ([::2]<sup>1) 
-* To retrieve these characters in reverse order add a minus in to [::2] -> [::-2]<sup>2 
+* It then slices the inputted argument to every other character of the input argument from index 0 (0 being the first character) to the end ([::2]<sup>1). 
+* To retrieve these characters in reverse order add a minus in to [::2] -> [::-2]<sup>2.
 * Finally it prints out the resulting message.
 
 ~~~python
@@ -87,7 +81,7 @@ message = input("Please enter a sentance: ")[::-2]
 print(message)
 ~~~
 
-* To run this program enter the following into the command line
+* To run this program enter the following into the command line:
 ~~~ 
 python secondstring.py 
 ~~~
@@ -109,13 +103,13 @@ The [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture):
 
 #### **collatz.py**
 
-* This program begins by creating a function to run the Collatz Conjecture<sup>1</sup>. A conditional statement is applied that if the argument (number) is even then it is to be divided by 2. If the number is not even, i.e. it is odd, then the number will be multipled by 3 and a 1 subsequently added. 
+* This program begins by creating a function to run the Collatz Conjecture<sup>1. A conditional statement is applied that if the argument (number) is even then it is to be divided by 2. If the number is not even, i.e. it is odd, then the number will be multipled by 3 and a 1 subsequently added. 
 * The user is asked to enter an integer which is run through the collatzz function
 * The output of this is then printed and reentered back into the function to run repeatedly until the the function outputs a value of 1 (using a while loop). 
-* When the function returns an output of 1, the program will be terminated<sup>2</sup>
+* When the function returns an output of 1, the program will be terminated<sup>2.
 
 ~~~python
-# create function for collatz conjecture
+# Ref 1 - create function for collatz conjecture
 def collatz(number):  
     # if the argument is even                
     if number % 2 == 0: 
@@ -140,11 +134,11 @@ while numberInput != 1:
     numberInput = collatz(numberInput)
 else: 
     numberInput == 1
-    # quit the program when a specific output value returns back into the function
+    # Ref 2 - quit the program when a specific output value returns back into the function
     quit()  
 ~~~
 
-* To run this program enter the following into the command line
+* To run this program enter the following into the command line:
 ~~~ 
 python collatz.py 
 ~~~
@@ -166,13 +160,13 @@ The weekly task was to create a program that outputs whether the current day is 
 
 #### **weekday.py**
 
-* This program uses an in-built module of Python called datatime, which supplies classes for manipulating dates and times<sup>1</sup>. 
-* It then sets a variable to be equal to the weekday number where 0-6 equate to the 7 days of the week (Mon-Sun, with Monday beginning at 0)
-* It subsequently gives two printing options when run, depending on the day of the week that the program is run. That it is a weekday if run on Monday to Fri (weekday numbers 0-4) or a weekend if run on Saturday or Sunday (weekday numbers 5 and 6)<sup>2</sup>.
+* This program uses an in-built module of Python called datetime, which supplies classes for manipulating dates and times<sup>1. 
+* It then sets a variable to be equal to the weekday number where 0-6 equate to the 7 days of the week (Monday-Sunday, with Monday beginning at 0).
+* It subsequently gives two printing options when run, depending on the day of the week that the program is run. That it is a weekday if run on Monday to Friday (weekday numbers 0-4) or a weekend if run on Saturday or Sunday (weekday numbers 5 and 6)<sup>2.
 
 ~~~python
 
-# import the 'datetime' module (Ref 1 and 2)
+# Ref 1-2 - import the 'datetime' module
 import datetime              
 # instruct to get the weekday number (1-7)
 weekNumber = datetime.datetime.today().weekday()    
@@ -186,7 +180,7 @@ else:
     print("It is the weekend")
 ~~~
 
-* To run this program enter the following into the command line
+* To run this program enter the following into the command line:
 ~~~ 
 python weekday.py 
 ~~~
@@ -205,14 +199,14 @@ The weekly task was to create a program that takes a floating point number as th
 
 #### **squareroot.py**
 
-* This program creates a function to calculate the square root of a number that the user inputs
+* This program creates a function to calculate the square root of a number that the user inputs.
 * The algorithm employed to find the root of the number is Newton's Method<sup>1,2</sup>.
 
 [Newton's Method](https://en.wikipedia.org/wiki/Newton%27s_method):
 > "...a root-finding algorithm which produces successively better approximations to the roots (or zeroes) of a real-valued function."
 
 * Firstly, the program asks the user to input a positive number.
-* It then enters the number into the function, runs it through an equation (x = x - (x multiplied by x minus y) divided by (2 multiplied by x), and it does this 6 times to improve on the accuray of the root output number. 
+* It then enters the number into the function, runs it through an equation (x = x - (x multiplied by x minus y) divided by (2 multiplied by x), and it does this 6 times to improve on the accuracy of the root output number. 
 * It then outputs a sentence that lets the user know what the root value is of the number they chose.
 
 ~~~python
@@ -220,12 +214,12 @@ The weekly task was to create a program that takes a floating point number as th
 # ask the user to input a positive float number
 num1 = float(input("Please enter a positive number: "))
 
-# Use Newton's method to write a square root algorithm (Ref 1-2)
+# Ref: 1-2 - Use Newton's method to write a square root algorithm 
 # create a function called sqrt 
 def sqrt(y: float) -> float:
     x: float = y
-    # set a range to run Newton's method equation that follows below 6 times 
-    # (6 repeats seems to return a fairly accurate redult. No need to go higher - Ref 2)
+    # Ref 2 - set a range to run Newton's method equation that follows below 6 times 
+    # (6 repeats seems to return a fairly accurate redult. No need to go higher)
     for _ in range (0,6):  
         # Asking: x^2 - y = 0 (y [slope] is a known constant)        
         x = x - (x * x - y) / (2 * x)   
@@ -240,7 +234,7 @@ print ("The square root of 14.5 is approx {} ".format (ans))
 
 ~~~
 
-* To run this program enter the following into the command line
+* To run this program enter the following into the command line:
 ~~~ 
 python squareroot.py 
 ~~~
@@ -257,15 +251,15 @@ This week's topic covered reading and writing to files, including an introductio
 
 The weekly task was to write a program that reads in a text file from the command line and outputs the number of e's it contains.
 
-The text file "moby-dick.txt" was downloaded from the Github website for this purpose<sup>4</sup>.
+The text file [moby-dick.txt](https://gist.githubusercontent.com/StevenClontz/4445774/raw/1722a289b665d940495645a5eaaad4da8e3ad4c7/mobydick.txt) was downloaded from the Github website for this purpose<sup>4</sup>.
 
 
 #### **es.py**
 
-* Firstly, the ```sys``` module is imported and instructions follow to read in the filename from the terminal (if running in VS code)<sup>3</sup>
-    * The ```sys.argv[x]``` command takes an argument from the command line and inserts it into the python code<sup>3</sup>
-    * For the purpose of this program, it allows the user to enter a filename in the command line interface (VSC terminal), after instructing the program to run. In this case, x = 1 will insert the argument that follows the ```python es.py``` instruction to run the program
-    * If the user were to enter x  = 0, this would insert the name of the running program<sup>3</sup>
+* Firstly, the ```sys``` module is imported and instructions follow to read in the filename from the terminal (if running in VS code)<sup>3</sup>.
+    * The ```sys.argv[x]``` command takes an argument from the command line and inserts it into the python code<sup>3</sup>.
+    * For the purpose of this program, it allows the user to enter a filename in the command line interface (VSC terminal), after instructing the program to run. In this case, x = 1 will insert the argument that follows the ```python es.py``` instruction to run the program.
+    * If the user were to enter x  = 0, this would insert the name of the running program<sup>3</sup>.
     * This will get the last argument on the command line. If no arguments are passed, it will be the script name itself, as sys.argv[0] is the name of the running program.
     * Where sys.argv[0] is the name of the running program (as no arguments are passed), sys.argv[1] gets the last argument on the command line<sup>3</sup>.
 
@@ -390,7 +384,7 @@ plt.text(
 plt.show()                      
 ~~~
 
-* To run this program enter the following into the command line
+* To run this program enter the following into the command line:
 ~~~ 
 python plottask.py 
 ~~~
