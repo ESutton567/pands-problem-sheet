@@ -13,33 +13,43 @@
 # Ref 10 :https://www.tutorialspoint.com/how-to-write-text-in-subscript-in-the-axis-labels-and-the-legend-using-matplotlib
 # Ref 11: https://python-graph-gallery.com/web-line-chart-with-labels-at-line-end
 
-from tkinter.font import BOLD
-from matplotlib.font_manager import FontProperties
-import numpy as np                  # import package to work with array data
-import matplotlib.pyplot as plt     # pyplot is a state-based interface to matplotlib
+# Ref 1- import package to work with array data
+import numpy as np                  
+# Ref 1 - pyplot is a state-based interface to matplotlib
+import matplotlib.pyplot as plt     
 from matplotlib import rc
+# import BOLD font
+from tkinter.font import BOLD
+# import font properties from matplotlib font manager
+from matplotlib.font_manager import FontProperties
 
-x = np.array([1,4])             # assign the range to the variable x (as an array)
+# assign the range to the variable x (as an array)
+x = np.array([1,4])             
 
-def f(x):                       # Ref 3 - define f(x)
+# Ref 3 - define f(x)
+def f(x):                       
     return x
 
 def g(x):
-    return x * x                # we can simply multiply (to power x to 2) in this way as x an array
+    # we can simply multiply (to power x to 2) in this way as x an array
+    return x * x                
 
 def h(x):
-    return x ** 3               # power x to 3
+    # power x to 3
+    return x ** 3               
 
-# print(f(x), g(x), h(x))       # use this to test that the functions work
+# use the code below to test that the functions work
+# print(f(x), g(x), h(x))       
 
 # Ref 4 - plot each function separately and assign colour
 # Ref 5 - line style
 # Ref 8 - list of colors in matplotlib
-# Ref 10: using subscript text
+# Ref 10 - using subscript text
 plt.plot(x, f(x), color='navy', label='f(x) = x')  
 plt.plot(x, g(x), color='royalblue', label=r'g(x) = $x^2$', ls='--') 
 plt.plot(x, h(x), color='deepskyblue', label=r'y(x) = $x^3$', ls=':')     
 
+# Ref 1 - legends and labels
 plt.legend()
 plt.xlabel('x',fontweight=BOLD)
 plt.ylabel('y',fontweight=BOLD)
@@ -64,7 +74,8 @@ plt.text(
     ha='center',
 )
 
-plt.show()                      # call a visual of the the plot
+# Ref 1 - call a visual of the the plot
+plt.show()
 
 
 
