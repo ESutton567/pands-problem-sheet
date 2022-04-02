@@ -292,8 +292,6 @@ The weekly task was to write a program that displays a plot of the functions f(x
 
 * A legend and axis labels are added, followed by a title with a customised font<sup7,9</sup> and finally a footnote<sup>11</sup>.
 
-* A visual of the plot is then called: [Maths Functions](plot.png)
-
  ~~~python
 
 # Ref 1- import package to work with array data
@@ -360,6 +358,15 @@ plt.text(
 # Ref 1 - call a visual of the the plot
 plt.show()                      
 ~~~
+
+* To run this program enter the following into the command line
+~~~ 
+python plpttask.py 
+~~~
+
+* A visual of the plot is then called which can be accessed here: [Maths Functions](plot.png)
+
+
 References
 > 1. [lab8.10](https://github.com/ESutton567/Pands2022/blob/main/Labs/Week08-plotting/lab8.10-counties.py)
 > 2. [www.w3schools.com](https://www.w3schools.com/python/matplotlib_plotting.asp)
