@@ -269,3 +269,108 @@ References
 > 5. [www.geeksforgeeks.org](https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/)
 
 ---
+
+## 7. Plotting
+
+This week's topic covered plotting, with the [**matplotlib**](https://matplotlib.org/) module.
+
+The weekly task was to write a program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
+
+#### **plottask.py**
+
+* Firstly, the [**NumPy**](https://numpy.org/) module is imported to allow the program to work with array data. 
+* Secondly, matplotlib is imported to allow plotting functions within the program.
+* Subsequent modules are imported to enable customisation of the plot.
+
+* A range [0,4] is assigned to a variable x.
+* 3 functions are created to define the required functions :f(x)=x, g(x)=x2 and h(x)=x3<sup>3</sup>.
+    * As we are working with array data we can use simple algebra to achieve this. 
+
+* The commented out code that follows is used to test that these functions are running correctly. 
+
+* Each function is then plotted separately<sup>4</sup>, and the plot line styles<sup>5</sup>, colours <sup>8</sup> and labels<sup>1</sup> are customised.
+
+* A legend and axis labels are added, followed by a title with a customised font<sup7,9</sup> and finally a footnote<sup>11</sup>.
+
+* A visual of the plot is then called: [Maths Functions](plot.png)
+
+ ~~~python
+
+# Ref 1- import package to work with array data
+import numpy as np                  
+# Ref 1 - pyplot is a state-based interface to matplotlib
+import matplotlib.pyplot as plt     
+from matplotlib import rc
+# import BOLD font
+from tkinter.font import BOLD
+# import font properties from matplotlib font manager
+from matplotlib.font_manager import FontProperties
+
+# assign the range to the variable x (as an array)
+x = np.array([1,4])             
+
+# Ref 3 - define f(x)
+def f(x):                       
+    return x
+
+def g(x):
+    # we can simply multiply (to power x to 2) in this way as x an array
+    return x * x                
+
+def h(x):
+    # power x to 3
+    return x ** 3               
+
+# use the code below to test that the functions work
+# print(f(x), g(x), h(x))       
+
+# Ref 4 - plot each function separately and assign colour
+# Ref 5 - line style
+# Ref 8 - list of colors in matplotlib
+# Ref 10 - using subscript text
+plt.plot(x, f(x), color='navy', label='f(x) = x')  
+plt.plot(x, g(x), color='royalblue', label=r'g(x) = $x^2$', ls='--') 
+plt.plot(x, h(x), color='deepskyblue', label=r'y(x) = $x^3$', ls=':')     
+
+# Ref 1 - legends and labels
+plt.legend()
+plt.xlabel('x',fontweight=BOLD)
+plt.ylabel('y',fontweight=BOLD)
+
+# Ref 7 - titling and formating font 
+# Ref 9 - fontweight 
+plt.title(
+    label='Maths Functions',
+    fontname='Times New Roman',
+    fontsize=14, 
+    fontweight=BOLD
+    )
+
+# Ref 11 - customise text
+plt.text(
+    2.5, 
+    -11, 
+    "Produced by Éilis Sutton", 
+    fontname="Times New Roman", 
+    fontsize=9, 
+    color='black', 
+    ha='center',
+)
+
+# Ref 1 - call a visual of the the plot
+plt.show()                      
+~~~
+References
+> 1. [lab8.10](https://github.com/ESutton567/Pands2022/blob/main/Labs/Week08-plotting/lab8.10-counties.py)
+> 2. [www.w3schools.com](https://www.w3schools.com/python/matplotlib_plotting.asp)
+> 3. [calc-again.readthedocs.io](https://calc-again.readthedocs.io/en/latest/tutorials/01-plotting-and-functions.html)
+> 4. [scriptverse.academy](https://scriptverse.academy/tutorials/python-matplotlib-plot-function.html)
+> 5. [www.w3schools.com](https://www.w3schools.com/python/matplotlib_line.asp)
+ >6. [www.w3schools.com](https://www.w3schools.com/python/matplotlib_labels.asp)
+> 7. [www.geeksforgeeks](https://www.geeksforgeeks.org/matplotlib-pyplot-title-in-python/)
+> 8. [matplotlib.org](https://matplotlib.org/stable/gallery/color/named_colors.html)
+> 9. [stackoverflow.com](https://stackoverflow.com/questions/18962063/matplotlib-setting-title-bold-while-using-times-new-roman)
+> 10. [www.tutorialspoint](https://www.tutorialspoint.com/how-to-write-text-in-subscript-in-the-axis-labels-and-the-legend-using-matplotlib)
+> 10. [python-graph-gallery.com](https://python-graph-gallery.com/web-line-chart-with-labels-at-line-end)
+
+---
