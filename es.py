@@ -12,15 +12,17 @@
 # https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
 
 
-import sys              # Ref 3
-filename = sys.argv[1]
+# import the sys module to allow command line arguments to be passed into the Python script
+import sys              
+# assign the filename using the CLI byget the last argument on the command line (i.e. read in the filename from the terminal, if running in VS code'; Ref 3)
+filename = sys.argv[-1]
 
 def countEs(filename, letter):        # Ref 5 
     with open(filename, 'rt') as f:  # Open the file in read mode(text file)
         es = f.read()               # Store the content of the file as a variable
-        return es.count(letter)     # Ref 1 & 2; the countEs fun now returns the count function
+        return es.count(letter)     # The countEs fun now returns the count function (Ref 1-2)
 
-amountEs = countEs(filename,str("e"))  # This uses the count fun and specifies that within the filename you want 'e' counted 
+amountEs = countEs(filename,str("e"))  # This uses the count function and specifies that within the filename you want 'e' counted 
 print("There are {} Es in {}".format(amountEs, filename))
 
 
