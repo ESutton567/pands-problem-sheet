@@ -55,6 +55,12 @@ newNumber = weight/((height/100)**2)
 # output the variable based on the user input
 print('The BMI is kg/m2: {}' .format (newNumber))
 ~~~
+
+* To run this program enter the following into the command line
+~~~ 
+python bmi.py 
+~~~
+
 References
 > 1. [Code obtained from addOne.py during Statements topic lectures](https://github.com/ESutton567/Pands2022/blob/main/Lectures/Week02/addOne.py)
 
@@ -80,6 +86,12 @@ message = input("Please enter a sentance: ")[::-2]
 # print the message
 print(message)
 ~~~
+
+* To run this program enter the following into the command line
+~~~ 
+python secondstring.py 
+~~~
+
 References
 > 1. [stackoverflow.com](https://stackoverflow.com/questions/20847205/program-to-extract-every-alternate-letters-from-a-string-in-python)
 > 2. [realpython.com](https://realpython.com/reverse-string-python/)
@@ -131,6 +143,12 @@ else:
     # quit the program when a specific output value returns back into the function
     quit()  
 ~~~
+
+* To run this program enter the following into the command line
+~~~ 
+python collatz.py 
+~~~
+
 References
 > 1. [stackoverflow.com](https://stackoverflow.com/questions/33508034/making-a-collatz-program-automate-the-boring-stuff)
 > 2. [java2blog.com](https://java2blog.com/exit-program-python/)
@@ -167,6 +185,12 @@ if weekNumber < 5:
 else: 
     print("It is the weekend")
 ~~~
+
+* To run this program enter the following into the command line
+~~~ 
+python weekday.py 
+~~~
+
 References
 > 1. [w3schools.com](https://www.w3schools.com/python/python_datetime.asp)
 > 2. [tutorialsrack.com](https://www.tutorialsrack.com/articles/324/how-to-find-the-current-day-is-weekday-or-weekends-in-python)
@@ -215,6 +239,12 @@ ans = sqrt(num1)
 print ("The square root of 14.5 is approx {} ".format (ans)) 
 
 ~~~
+
+* To run this program enter the following into the command line
+~~~ 
+python squareroot.py 
+~~~
+
 References
 > 1. [stackoverflow.com](https://stackoverflow.com/questions/1623375/writing-your-own-square-root-function)
 > 2. [youtube.com](https://www.youtube.com/watch?v=3i9KozCUKU4)
@@ -243,9 +273,6 @@ The text file "moby-dick.txt" was downloaded from the Github website for this pu
 
 * Lastly, the count function is instructed to count the e's in the txt file and prints it out. 
 
-* To run this program enter the following into the command line (while ensuring the moby-dick.text file is within the working directory):
-```es.py moby-dick.txt```
-
 ~~~python
 
 # import the sys module to allow command line arguments to be passed into the Python script
@@ -261,6 +288,10 @@ def countEs(filename, letter):        # Ref 5
 amountEs = countEs(filename,str("e"))  # This uses the count function and specifies that within the filename you want 'e' counted 
 print("There are {} Es in {}".format(amountEs, filename))
 ~~~
+
+* To run this program enter the following into the command line (while ensuring the moby-dick.text file is within the working directory):
+```es.py moby-dick.txt```
+
 References
 > 1. [pythonexamples.org](https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/)
 > 2. [www.w3schools.com](https://www.w3schools.com/python/ref_list_count.asp)
@@ -361,7 +392,7 @@ plt.show()
 
 * To run this program enter the following into the command line
 ~~~ 
-python plpttask.py 
+python plottask.py 
 ~~~
 
 * A visual of the plot is then called which can be accessed here: [Maths Functions](plot.png)
