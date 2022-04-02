@@ -1,5 +1,16 @@
 # pands-problem-sheet
 
+## Table of Contents
+    [Project Descripton](https://github.com/ESutton567/pands-problem-sheet#pands-problem-sheet)
+    [1. Creating a repository](https://github.com/ESutton567/pands-problem-sheet#1-creating-a-repository)
+    [2. Statements](https://github.com/ESutton567/pands-problem-sheet#2-statements)
+    [3. Variables](https://github.com/ESutton567/pands-problem-sheet#3-variables)
+    [4. Controlling the flow](https://github.com/ESutton567/pands-problem-sheet#4-controlling-the-flow)
+    [5. Data](https://github.com/ESutton567/pands-problem-sheet#5-data)
+    [6. Functions](https://github.com/ESutton567/pands-problem-sheet#6-functions)
+    [7. Files](https://github.com/ESutton567/pands-problem-sheet#7-files)
+    [8. Plotting](https://github.com/ESutton567/pands-problem-sheet#7-plotting)
+
 ## Project Descripton
 
 My name is **Éilis Sutton** and I would like to welcome you to my first foray into programming. 
@@ -302,7 +313,7 @@ References
 
 ---
 
-## 7. Plotting
+## 8. Plotting
 
 This week's topic covered plotting, with the [**matplotlib**](https://matplotlib.org/) module.
 
