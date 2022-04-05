@@ -55,7 +55,7 @@ The weekly task was to write a program to calculate a user's Body Mass Index (BM
 
 * This program begins by asking the user to input their weight in kilograms (kg), following by their height in centimetres (cm). 
 * It then creates a new variable that calculates BMI (weight[kg]/height[m<sup>2</sup>]), based on the user input values. 
-* Finally it prints out the resulting BMI value<sup>1.
+* Finally it prints out the resulting BMI value<sup>1</sup>.
 
 ~~~python
 # Ref 1 - ask the user to input their weight
@@ -87,8 +87,8 @@ The weekly task was to write a program that takes a string inputted by the user 
 [secondstring.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/secondstring.py)
 
 * This program begins by asking the user to input a sentance (argument). 
-* It then slices the inputted argument to every other character of the input argument from index 0 (0 being the first character) to the end ([::2]<sup>1). 
-* To retrieve these characters in reverse order add a minus in to [::2] -> [::-2]<sup>2.
+* It then slices the inputted argument to every other character of the input argument from index 0 (0 being the first character) to the end ([::2]<sup>1</sup>). 
+* To retrieve these characters in reverse order add a minus in to [::2] -> [::-2]<sup>2</sup>.
 * Finally it prints out the resulting message.
 
 ~~~python
@@ -121,10 +121,10 @@ The [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture):
 
 [collatz.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/collatz.py)
 
-* This program begins by creating a function to run the Collatz Conjecture<sup>1. A conditional statement is applied that if the argument (number) is even then it is to be divided by 2. If the number is not even, i.e. it is odd, then the number will be multipled by 3 and a 1 subsequently added. 
+* This program begins by creating a function to run the Collatz Conjecture<sup>1</sup>. A conditional statement is applied that if the argument (number) is even then it is to be divided by 2. If the number is not even, i.e. it is odd, then the number will be multipled by 3 and a 1 subsequently added. 
 * The user is asked to enter an integer which is run through the collatzz function
 * The output of this is then printed and reentered back into the function to run repeatedly until the the function outputs a value of 1 (using a while loop). 
-* When the function returns an output of 1, the program will be terminated<sup>2.
+* When the function returns an output of 1, the program will be terminated<sup>2</sup>.
 
 ~~~python
 # Ref 1 - create function for collatz conjecture
@@ -178,9 +178,9 @@ The weekly task was to create a program that outputs whether the current day is 
 
 [weekday.py](https://github.com/ESutton567/pands-problem-sheet/blob/main/weekday.py)
 
-* This program uses an in-built module of Python called datetime, which supplies classes for manipulating dates and times<sup>1. 
+* This program uses an in-built module of Python called datetime, which supplies classes for manipulating dates and times<sup>1</sup>. 
 * It then sets a variable to be equal to the weekday number where 0-6 equate to the 7 days of the week (Monday-Sunday, with Monday beginning at 0).
-* It subsequently gives two printing options when run, depending on the day of the week that the program is run. That it is a weekday if run on Monday to Friday (weekday numbers 0-4) or a weekend if run on Saturday or Sunday (weekday numbers 5 and 6)<sup>2.
+* It subsequently gives two printing options when run, depending on the day of the week that the program is run. That it is a weekday if run on Monday to Friday (weekday numbers 0-4) or a weekend if run on Saturday or Sunday (weekday numbers 5 and 6)<sup>2</sup>.
 
 ~~~python
 
@@ -333,7 +333,7 @@ The weekly task was to write a program that displays a plot of the functions f(x
 
 * Each function is then plotted separately<sup>4</sup>, and the plot line styles<sup>5</sup>, colours <sup>8</sup> and labels<sup>1</sup> are customised.
 
-* A legend and axis labels are added, followed by a title with a customised font<sup7,9</sup> and finally a footnote<sup>11</sup>.
+* A legend and axis labels are added, followed by a title with a customised font<sup>7,9</sup> and finally a footnote<sup>11</sup>.
 
  ~~~python
 
