@@ -292,12 +292,17 @@ import sys
 # assign the filename using the CLI byget the last argument on the command line (i.e. read in the filename from the terminal, if running in VS code'; Ref 3)
 filename = sys.argv[-1]
 
-def countEs(filename, letter):        # Ref 5 
-    with open(filename, 'rt') as f:  # Open the file in read mode(text file)
-        es = f.read()               # Store the content of the file as a variable
-        return es.count(letter)     # The countEs fun now returns the count function (Ref 1-2)
+# Ref 5
+def countEs(filename, letter): 
+    # Open the file in read mode(text file)        
+    with open(filename, 'rt') as f:  
+        # Store the content of the file as a variable
+        es = f.read()  
+        # The countEs fun now returns the count function (Ref 1-2)             
+        return es.count(letter)     
 
-amountEs = countEs(filename,str("e"))  # This uses the count function and specifies that within the filename you want 'e' counted 
+# This uses the count function and specifies that within the filename you want 'e' counted
+amountEs = countEs(filename,str("e"))   
 print("There are {} Es in {}".format(amountEs, filename))
 ~~~
 
